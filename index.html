@@ -4,49 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <title>NYTS G3</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <div class="jumbotron">New York Times Search</div>
+    <div class="jumbotron">
+        <i class="far fa-newspaper"></i> New York Times Search</div>
+
+
     <div class="container">
-        <div class="title secondary">Top Articles</div>
+
         <form>
-            <h3>Search Term:</h3>
-            <input class="formInput" id="searchTerm" type="text" name="searchTerm" value="Germany">
-            <br><br>
-            <h3>Number of Records to Retrieve:</h3>
-            <input class="formInput" id="numOfRecords" type="text" name="numOfRecords:" value="5">
-            <br><br>
-            <h3>Start Year (Optional):</h3>
-            <input class="formInput" id="startYear" type="text" name="startYear" value="2017">
-            <br><br>
-            <h3>End Year (Optional):</h3>
-            <input class="formInput" id="endYear" type="text" name="endYear" value="2018">
-            <br><br>
-            <input class="btn btn-secondary search" type="submit" value="Search">
+            <h3>
+                <i class="far fa-keyboard"></i>
+                 Search Parameters
+            </h3>
+
+            <div class="form-group">
+                 
+                <label for="exampleInputTerm"> Search Term</label>
+                <input type="term" class="form-control" id="exampleInputTerm" placeholder="Enter search terms">
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputRecordRetrieve">Number of Records to Retrieve</label>
+                <input type="term" class="form-control" id="exampleInputRecordRetrieve" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputStartYear">Start Year (Optional)</label>
+                <input type="term" class="form-control" id="StartYear" placeholder="End Year">
+            </div>
+
+            <div class="form-group">
+                    <label for="exampleInputendYear">End Year (Optional)</label>
+                    <input type="term" class="form-control" id="EndYear" placeholder="End Year">
+                </div>
+
+            <div class="buttons">
+            <input class="btn btn-secondary" type="submit" value="Search">
             <input class="btn btn-secondary" type="submit" value="Clear Results">
-            <br><br>
-        </form>
-    </div>
-    <div class="container">
-        <div class="title secondary">Top Articles</div>
-        <div>
-            <span id="articles"></span>
         </div>
+           <br>
+           
+            
+        </form>
+
+
     </div>
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
+        <div class="containerArticles">
+            <div class="results">
+                <h3>
+                    <i class="fas fa-table"></i> Top Articles</h3>
+            </div>
+
+            <div>
+                <span id="articles">
+                      <p>
+                    results will appear here
+                </p>
+                </span>
+              
+            </div>
+
+        </div>
+
+
+
+    
+
+
+
+
+
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
+<<<<<<< HEAD
+
+=======
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/javascript/Group-exercise-data.js"></script>
+>>>>>>> 371bc3f941052356191ea0d88a8068126ee9704b
 </body>
 
 </html>
