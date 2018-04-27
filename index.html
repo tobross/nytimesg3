@@ -25,7 +25,6 @@
     <div class="container">
 
         <form>
-<<<<<<< HEAD
             <h3>
                 <i class="far fa-keyboard"></i>
                  Searh Parameters
@@ -40,34 +39,29 @@
 
             <div class="form-group">
                 <label for="exampleInputRecordRetrieve">Number of Records to Retrieve</label>
-                <input type="password" class="form-control" id="exampleInputRecordRetrieve" placeholder="">
+                <input type="term" class="form-control" id="exampleInputRecordRetrieve" placeholder="">
             </div>
 
             <div class="form-group">
                 <label for="exampleInputStartYear">Start Year (Optional)</label>
-                <input type="password" class="form-control" id="StartYear" placeholder="Year">
+                <input type="term" class="form-control" id="StartYear" placeholder="End Year">
             </div>
 
-            <button type="submit" class="btn btn-secondary">Submit</button>
-            <button type="submit" class="btn btn-secondayr">Clear Results</button>
-=======
-            <h3>Search Term:</h3>
-            <input class="formInput" type="text" name="searchTerm" value="Germany">
-            <br><br>
-            <h3>Number of Records to Retrieve:</h3>
-            <input class="formInput" type="text" name="numOfRecords:" value="5">
-            <br><br>
-            <h3>Start Year (Optional):</h3>
-            <input class="formInput" type="text" name="startYear" value="2017">
-            <br><br>
-            <h3>End Year (Optional):</h3>
-            <input class="formInput" type="text" name="endYear" value="2018">
-            <br><br>
+            <div class="form-group">
+                    <label for="exampleInputendYear">End Year (Optional)</label>
+                    <input type="term" class="form-control" id="EndYear" placeholder="End Year">
+                </div>
+
+            <div class="buttons">
             <input class="btn btn-secondary" type="submit" value="Search">
             <input class="btn btn-secondary" type="submit" value="Clear Results">
-            <br><br>
->>>>>>> 371bc3f941052356191ea0d88a8068126ee9704b
+        </div>
+           <br>
+           
+            
         </form>
+
+
     </div>
 
         <div class="containerArticles">
@@ -77,7 +71,12 @@
             </div>
 
             <div>
-                <span id="articles"></span>
+                <span id="articles">
+                      <p>
+                    results will appear here
+                </p>
+                </span>
+              
             </div>
 
         </div>
