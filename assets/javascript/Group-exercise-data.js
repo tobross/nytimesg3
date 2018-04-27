@@ -9,6 +9,10 @@ url += '?' + $.param({
   'begin_date': beginDate,
   'end_date': endDate
 });
+
+
+
+
 $.ajax({
   url: url,
   method: 'GET',
@@ -17,3 +21,8 @@ $.ajax({
 }).fail(function(err) {
   throw err;
 });
+
+function formClear() {
+  document.getElementById("
+  #form-group").reset();
+}
