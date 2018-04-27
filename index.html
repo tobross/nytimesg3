@@ -15,8 +15,21 @@
     <div class="container">
         <div class="title secondary">Top Articles</div>
         <form>
-            <button class="btn btn-secondary submit" id="search">Search</button>
-            <button class="btn btn-secondary submit" id="clear">Clear Results</button>
+            <h3>Search Term:</h3>
+            <input class="formInput" type="text" name="searchTerm" value="Germany">
+            <br><br>
+            <h3>Number of Records to Retrieve:</h3>
+            <input class="formInput" type="text" name="numOfRecords:" value="5">
+            <br><br>
+            <h3>Start Year (Optional):</h3>
+            <input class="formInput" type="text" name="startYear" value="2017">
+            <br><br>
+            <h3>End Year (Optional):</h3>
+            <input class="formInput" type="text" name="endYear" value="2018">
+            <br><br>
+            <input class="btn btn-secondary" type="submit" value="Search">
+            <input class="btn btn-secondary" type="submit" value="Clear Results">
+            <br><br>
         </form>
     </div>
     <div class="container">
@@ -33,6 +46,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/Group-exercise-data.js"></script>
 </body>
 
 </html>
